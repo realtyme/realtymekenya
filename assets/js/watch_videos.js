@@ -96,6 +96,11 @@ mama_otis_btn.addEventListener('click', function(e){
 //     videoSrc = python_btn.getAttribute('data-bs-src')
 // })
 
+// Lyric video
+var wstrn_btn = document.getElementById('wstrn-unload')
+wstrn_btn.addEventListener('click', function(e){
+    videoSrc = wstrn_btn.getAttribute('data-bs-src')
+})
 
 // Finally! Get the link. Autoplay isn't working for all devices
 var videoModal = document.getElementById('modal-youtube-videos')
