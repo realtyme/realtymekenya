@@ -29,6 +29,21 @@ chem_btn.addEventListener('click', function(e){
     videoSrc = chem_btn.getAttribute('data-bs-src')
 })
 
+var anatomy_arkit_btn = document.getElementById('anatomy-ar')
+anatomy_arkit_btn.addEventListener('click', function(e){
+    videoSrc = anatomy_arkit_btn.getAttribute('data-bs-src')
+})
+
+var earth_ar_android_btn = document.getElementById('earth-ar-android')
+earth_ar_android_btn.addEventListener('click', function(e){
+    videoSrc = earth_ar_android_btn.getAttribute('data-bs-src')
+})
+
+var math_ar_btn = document.getElementById('math-ar')
+math_ar_btn.addEventListener('click', function(e){
+    videoSrc = math_ar_btn.getAttribute('data-bs-src')
+})
+
 // Finally! Get the link. Autoplay isn't working for all devices
 var videoModal = document.getElementById('modal-youtube-videos')
 var video = document.getElementById('video')

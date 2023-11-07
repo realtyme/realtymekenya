@@ -1,18 +1,12 @@
-
 // Virtual Reality
-var ndw_btn = document.getElementById('nairobi-design-week')
-ndw_btn.addEventListener('click', function(e){
-    videoSrc = ndw_btn.getAttribute('data-bs-src')
-})
-
 var vrfashion_btn = document.getElementById('vr-fashion')
 vrfashion_btn.addEventListener('click', function(e){
     videoSrc = vrfashion_btn.getAttribute('data-bs-src')
 })
 
-var anatomy_xr_btn = document.getElementById('anatomy-xr')
-anatomy_xr_btn.addEventListener('click', function(e){
-    videoSrc = anatomy_xr_btn.getAttribute('data-bs-src')
+var ndw_btn = document.getElementById('nairobi-design-week')
+ndw_btn.addEventListener('click', function(e){
+    videoSrc = ndw_btn.getAttribute('data-bs-src')
 })
 
 var chem_lab_btn = document.getElementById('chem-lab-vr')
@@ -20,9 +14,19 @@ chem_lab_btn.addEventListener('click', function(e){
     videoSrc = chem_lab_btn.getAttribute('data-bs-src')
 })
 
+var archery_game_btn = document.getElementById('archery-game-vr')
+archery_game_btn.addEventListener('click', function(e){
+    videoSrc = archery_game_btn.getAttribute('data-bs-src')
+})
+
 var anatomy_vr_btn = document.getElementById('anatomy-vr')
 anatomy_vr_btn.addEventListener('click', function(e){
     videoSrc = anatomy_vr_btn.getAttribute('data-bs-src')
+})
+
+var anatomy_xr_btn = document.getElementById('anatomy-xr')
+anatomy_xr_btn.addEventListener('click', function(e){
+    videoSrc = anatomy_xr_btn.getAttribute('data-bs-src')
 })
 
 var earth_vr_btn = document.getElementById('geography-vr-101')
