@@ -30,22 +30,21 @@ body {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-.card {
-  box-shadow: 0px 0px 6px 0px rgba(18,112,224,0.99);
-  border-radius: var(--rt--card-border-radius);
-  transition: ease-in-out;
-  transition-duration: 200ms;
-  background: linear-gradient(-178deg, rgba(50,55,61,0.85) 0%, rgba(28,38,47,0.51) 46%) border-box, #212529;
-  padding-top: 0px;
-  margin-top: 20px;
-  height: 315px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  height: 300px;
-  word-wrap: break-word;
-  --rt--card-border-radius: 0;
+@media (min-width: 300px) {
+  .card {
+    box-shadow: 0px 0px 6px 0px rgba(18,112,224,0.99);
+    border-radius: var(--rt--card-border-radius);
+    transition: ease-in-out;
+    transition-duration: 200ms;
+    background: linear-gradient(-178deg, rgba(50,55,61,0.85) 0%, rgba(28,38,47,0.51) 46%) border-box, #212529;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    --rt--card-border-radius: 0;
+    margin-top: 20px;
+  }
 }
 
 \ {
@@ -293,5 +292,11 @@ body {
   border-radius: 25px;
   border-width: 2px;
   border-color: var(--bs-gray-400);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
 }
 

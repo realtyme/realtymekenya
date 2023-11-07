@@ -63,3 +63,12 @@
 .large-pic {
 }
 
+@media (min-width: 576px) {
+  .card {
+    height: 230px;
+  }
+}
+
+.card {
+}
+
