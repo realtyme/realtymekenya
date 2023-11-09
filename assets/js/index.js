@@ -1,7 +1,7 @@
-// Project highlight
-var project_highlight_btn = document.getElementById('project-highlight')
-project_highlight_btn.addEventListener('click', function(e){
-    videoSrc = project_highlight_btn.getAttribute('data-bs-src')
+// Project Showcase! never have two similar ids. LOL!
+var project_showcase_btn = document.getElementById('project-showcase')
+project_showcase_btn.addEventListener('click', function(e){
+    videoSrc = project_showcase_btn.getAttribute('data-bs-src')
 })
 
 // Augmented Reality
@@ -100,7 +100,6 @@ vrfashion_btn.addEventListener('click', function(e){
 //     videoSrc = mark_angel_btn.getAttribute('data-bs-src')
 // })
 
-
 // Tools | Python and Blutilities for Unreal Engine 5
 // var python_btn = document.getElementById('python-blutilities')
 // python_btn.addEventListener('click', function(e){
@@ -122,7 +121,7 @@ basePath = "https://www.youtube.com/embed/"
 extension = "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
 videoModal.addEventListener('shown.bs.modal',(e)=>{
     youTubeUrl =  basePath.concat(videoSrc, extension)
-    //console.log(youTubeUrl)
+    // console.log(youTubeUrl)
     video.setAttribute('src', youTubeUrl)
     //video.setAttribute('src', videoSrc + '?autoplay=1&amp;modestbranding=1&amp;showinfo=0')
 })
